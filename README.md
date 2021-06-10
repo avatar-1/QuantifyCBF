@@ -11,7 +11,7 @@ The `GetHighestAmplitude.py` Python script used to obtain and combine data from 
 
 ## Installation
 
-To install Python 3 and required packages (numPy and pandas), the easiest way is to install [Anaconda](https://docs.continuum.io/anacondaorg/). See https://docs.continuum.io/anaconda/install/ for instructions.
+The easiest way to install Python 3 and required packages (numPy and pandas) is to install [Anaconda](https://docs.continuum.io/anacondaorg/). See https://docs.continuum.io/anaconda/install/ for instructions.
 
 ## How to use
 
