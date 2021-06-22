@@ -15,15 +15,17 @@ The easiest way to install Python 3 and required packages (numPy and pandas) is 
 
 ## How to use
 
-The `GetHighestAmplitude.xlsx` script is run using Terminal on MacOS/Linux or Command Prompt on Windows. The script is performed on the folder that contains all of the `AveSpectrum*.xlsx` Excel files intended to be analysed. This script is run on Excel files with extensions `.xlsx` or `.xml`. 
+Download the `GetHighestAmplitude.py` script. The `GetHighestAmplitude.py` script is run using Terminal on MacOS/Linux or `Anaconda Prompt` (or `Command Prompt` if not installed through Anaconda) on Windows. 
+
+The script is performed on the folder that contains all of the `AveSpectrum*.xlsx` Excel files intended to be analysed. This script can be performed for Excel files with extensions `.xlsx` or `.xml`. 
 
 ### MacOS/Linux
-In Terminal run:
-``python3 GetHighestAmplitude.py /path/to/folder/``
+In `Terminal` run:
+``python /path/to/script/GetHighestAmplitude.py /path/to/folder/``
 
 ### Windows
-In Command Prompt run:
-``py GetHighestAmplitude.py \path\to\file\``
+In `Anaconda Prompt` run:
+``python /path/to/script/GetHighestAmplitude.py \path\to\file\``
 
 ## Output
 
