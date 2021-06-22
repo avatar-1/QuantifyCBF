@@ -44,8 +44,8 @@ filetypes = ["*.xlsx","*.xls"]
 ...
 
 input_path = sys.argv[1]
-writer = pd.ExcelWriter(input_path + "/HighestAmplitudeCombined.xlsx")
-print('Getting first amplitudes <30 Hz! Outputting to ' + input_path + "/HighestAmplitudeCombined.xlsx")
+writer = pd.ExcelWriter(input_path + os.sep + "HighestAmplitudeCombined.xlsx")
+print('Getting first amplitudes <30 Hz! Outputting to ' + input_path + os.sep + "HighestAmplitudeCombined.xlsx")
 
 
 for filename in os.listdir(input_path):
@@ -60,14 +60,12 @@ for filename in os.listdir(input_path):
                         firstrow = pd.DataFrame(columns=['frequencies', 'Amplitude'])
                         firstrow = firstrow.append(workbook1.iloc[j])
                         break
-                firstrow['source'] = workbook
-                firstrow['source'] = firstrow['source'].str.replace(input_path + "/",'')
+                firstrow['source'] = workbook.replace(input_path + os.sep, '')
                 all_df.append(firstrow)
             data_concatenated = pd.concat(all_df, axis=0)
             data_concatenated.to_excel(writer, sheet_name="Modes",index=False)
         else:
             pass
-
 
 writer.save()
 print('Script complete!')
