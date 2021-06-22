@@ -1,7 +1,7 @@
 # QuantifyCBF
 
 ## Purpose
-The `GetHighestAmplitude.py` Python script used to obtain and combine data from multiple excel files for analysis of cilia beat frequency (CBF) as described in Allan et al. (2021). This script obtains the first amplitude <30 Hz from `AveSpectrum*.xlsx` Excel files created by the `Cilia Beat Frequency` MatLab script and combines them into one sheet.
+The `GetHighestAmplitude.py` Python script used to obtain and combine data from multiple excel files for analysis of cilia beat frequency (CBF) as described in [Allan et al. (2021)](https://temporary.link). This script obtains the first amplitude <30 Hz from `AveSpectrum*.xlsx` Excel files created by the `Cilia Beat Frequency` MatLab script and combines them into one sheet.
 
 ## Requirements 
 
@@ -13,9 +13,11 @@ The `GetHighestAmplitude.py` Python script used to obtain and combine data from 
 
 The easiest way to install Python 3 and required packages (numPy and pandas) is to install [Anaconda](https://docs.continuum.io/anacondaorg/). See https://docs.continuum.io/anaconda/install/ for instructions.
 
+This allows you to run Python through `Terminal` on MacOS/Linux or `Anaconda Prompt` on Windows.
+
 ## How to use
 
-Download the `GetHighestAmplitude.py` script.
+Download the `GetHighestAmplitude.py` script and unzip the folder.
 
 The `GetHighestAmplitude.py` script is run using `Terminal` on MacOS/Linux or `Anaconda Prompt` (or `Command Prompt` if Python not installed through Anaconda) on Windows. 
 
@@ -23,15 +25,27 @@ The script is performed on the folder that contains all of the `AveSpectrum*.xls
 
 ### MacOS/Linux
 In `Terminal` run:
-``python /path/to/script/GetHighestAmplitude.py /path/to/folder/``
+
+```
+python /path/to/script/GetHighestAmplitude.py /path/to/folder
+```
 
 ### Windows
-In `Anaconda Prompt` run:
-``python \path\to\script\GetHighestAmplitude.py \path\to\file\``
+In `Anaconda Prompt`/`Command Prompt` run:
+
+```
+python "path\to\script\GetHighestAmplitude.py" "path\to\folder"
+```
 
 ## Output
 
-The script will output an Excel file named `HighestAmplitudeCombined.xlsx` in the same input folder. This file contains three columns `frequency`, `Amplitude` and `Source` with rows for each file analysed. `frequency` contains the CBF frequency <30 Hz and `Amplitude` contains the associated CBF amplitude. `Source` contains the respective filename.
+The script will output an Excel file named `HighestAmplitudeCombined.xlsx` in the same input folder. This file contains three columns `frequency`, `Amplitude` and `Source` with rows for each file analysed. 
+
+`frequency` contains the CBF frequency <30 Hz.
+
+`Amplitude` contains the associated CBF amplitude.
+
+`Source` contains the respective filename.
 
 ### Example `HighestAmplitudeCombined.xlsx`
 
