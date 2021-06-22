@@ -25,7 +25,7 @@ In `Terminal` run:
 
 ### Windows
 In `Anaconda Prompt` run:
-``python /path/to/script/GetHighestAmplitude.py \path\to\file\``
+``python \path\to\script\GetHighestAmplitude.py \path\to\file\``
 
 ## Output
 
