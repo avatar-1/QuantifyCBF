@@ -1,7 +1,7 @@
 # QuantifyCBF
 
 ## Purpose
-The `GetHighestAmplitude.py` Python script used to obtain and combine data from multiple excel files for analysis of cilia beat frequency (CBF) as described in [Allan et al. (2021)](https://temporary.link). This script obtains the first amplitude <30 Hz from `AveSpectrum*.xlsx` Excel files created by the `Cilia Beat Frequency` MatLab script and combines them into one sheet.
+The `GetHighestAmplitude.py` Python script used to obtain and combine data from multiple excel files for analysis of cilia beat frequency (CBF) as described in [Allan et al. (2021)](https://temporary.link). This script obtains the first amplitude >=3 Hz and <30 Hz from `AveSpectrum*.xlsx` Excel files created by the `Cilia Beat Frequency` MatLab script and combines them into one sheet.
 
 ## Requirements 
 
