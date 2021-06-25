@@ -56,7 +56,7 @@ for filename in os.listdir(input_path):
             for workbook in workbook1:
                 workbook1 = pd.read_excel(workbook, sheet_name='Modes')
                 for j in range(len(workbook1)):
-                    if workbook1.frequencies.iloc[j] < 30:
+                    if workbook1.frequencies.iloc[j] >= 3 and workbook1.frequencies.iloc[j] < 30:
                         firstrow = pd.DataFrame(columns=['frequencies', 'Amplitude'])
                         firstrow = firstrow.append(workbook1.iloc[j])
                         break
